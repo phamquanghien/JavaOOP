@@ -2,7 +2,13 @@ package Shapes;
 
 public class HinhHoc {
     public final float PI = 3.14f;
-    public String ten;
+    private String ten;
+    public String Getter() {
+        return ten;
+    }
+    public void Setter(String name) {
+        this.ten = name;
+    }
     public float chuvi;
     public float dientich;
     public float thetich;

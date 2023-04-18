@@ -6,7 +6,11 @@ public class HinhTron extends HinhHoc{
     public float bankinh;
     public HinhTron()
     {
-        ten = "Hinh tron";
+        Setter("Hinh tron");
+    }
+    public HinhTron(float bankinh)
+    {
+        this.bankinh = bankinh;
     }
     public void NhapBanKinh()
     {
@@ -21,5 +25,8 @@ public class HinhTron extends HinhHoc{
     public void TinhDienTich()
     {
         dientich = PI * bankinh * dientich;
+    }
+    public void HienThi() {
+        System.out.printf("r = %f, cv = %f, dt = %f", bankinh,chuvi,dientich);
     }
 }

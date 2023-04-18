@@ -7,7 +7,6 @@ public class HinhChuNhat extends HinhHoc{
     public float rong;
     public HinhChuNhat()
     {
-        ten = "Hinh Chu nhat";
     }
     public void NhapChieuDai() {
         Scanner sc = new Scanner(System.in);

@@ -6,7 +6,11 @@ public class HinhTru extends HinhTron{
     public float chieucao;
     public HinhTru()
     {
-        ten = "Hinh Tru";
+        super();
+    }
+    public HinhTru(float ch)
+    {
+        this.chieucao = ch;
     }
     public void NhapChieuCao()
     {
@@ -17,5 +21,11 @@ public class HinhTru extends HinhTron{
     public void TinhTheTich()
     {
         thetich = dientich * chieucao;
+    }
+    @Override
+    public void HienThi()
+    {
+        //super.HienThi();
+        System.out.printf("\nh = %f, tt = %f", chieucao,thetich);
     }
 }
