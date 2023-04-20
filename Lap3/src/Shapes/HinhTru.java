@@ -3,16 +3,8 @@ package Shapes;
 import java.util.Scanner;
 
 public class HinhTru extends HinhTron{
-    public float chieucao;
-    public HinhTru()
-    {
-        super();
-    }
-    public HinhTru(float ch)
-    {
-        this.chieucao = ch;
-    }
-    public void NhapChieuCao()
+    public static float chieucao;
+    public static void NhapChieuCao()
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("h = ");
@@ -22,10 +14,11 @@ public class HinhTru extends HinhTron{
     {
         thetich = dientich * chieucao;
     }
-    @Override
-    public void HienThi()
+    public void TinhTheTich(float cc)
     {
-        //super.HienThi();
-        System.out.printf("\nh = %f, tt = %f", chieucao,thetich);
+        TinhDienTich();
+        thetich = dientich * cc;
+        System.out.printf("chieu cao = %f,the tich = %f",cc,thetich);
     }
+    
 }

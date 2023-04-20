@@ -1,22 +1,22 @@
 package Shapes;
 
+import java.util.Scanner;
+
 public class HinhHoc {
     public final float PI = 3.14f;
     private String ten;
-    public String Getter() {
-        return ten;
-    }
-    public void Setter(String name) {
-        this.ten = name;
-    }
-    public float chuvi;
+    public static float chuvi;
     public float dientich;
     public float thetich;
-    public void XuatTen()
+    public void SetTen(String name)
     {
-        System.out.println("Ten = " + ten);
+        this.ten = name;
     }
-    public void InChuVi()
+    public String GetTen() {
+        return this.ten;
+    }
+    
+    public static void InChuVi()
     {
         System.out.println("Chu vi = " + chuvi);
     }

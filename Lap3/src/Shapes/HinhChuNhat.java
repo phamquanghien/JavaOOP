@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class HinhChuNhat extends HinhHoc{
     public float dai;
     public float rong;
-    public HinhChuNhat()
-    {
-    }
     public void NhapChieuDai() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap chieu dai = ");
